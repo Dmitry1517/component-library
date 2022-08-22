@@ -1,0 +1,28 @@
+.my-page {
+    background-image: url(public/forest_400.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@media screen and (min-width: 400px) {
+    .my-page {
+        background-image: url(public/forest_768.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .my-page {
+        background-image: url(public/forest_1024.jpg);
+    } 
+}
+
+@media screen and (min-width: 1024px) {
+    .my-page {
+        background-image: url(public/forest_2560.jpg);
+    } 
+}

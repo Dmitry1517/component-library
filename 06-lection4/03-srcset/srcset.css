@@ -1,0 +1,14 @@
+.srcset {
+    width: 100%;
+}
+
+.srcset__body {
+    width: 300px;
+    height: 300px;
+}
+
+.srcset__image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}

@@ -1,0 +1,49 @@
+.skeleton {
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;  
+    padding: 24px 40px 32px 24px;
+}
+
+.skeleton__header {
+    display: flex;
+}
+
+.skeleton__avatar {
+    width: 64px;
+    height: 64px;
+    background: var(--grey-2);
+    border-radius: 50%;
+}
+
+.skeleton__line {
+    background: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--grey-5) 38.47%, var(--grey-6) 56.48%, var(--grey-7) 77.5%, var(--grey-2) 102.52%);
+    height: 20px;
+}
+
+.skeleton__data {
+    flex-grow: 1;
+    padding-top: 8px;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.skeleton__line_name {
+    width: 35%;
+}
+
+.skeleton__line_surname {
+    width: 60%;
+}
+
+.skeleton__line_info {
+    width: 100%;
+}
+
+.skeleton__body {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

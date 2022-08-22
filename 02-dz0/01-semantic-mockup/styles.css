@@ -1,0 +1,42 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body, a {
+	color: #fff;
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+	background-color: #ff0000;
+}
+
+nav {
+	background-color: #ffa500;
+	padding-top: 0.5em; 
+	padding-bottom: 0.5em; 
+}
+
+main {
+	background-color: #008000;
+	padding: 0.25em 0.25em 0.5em 0.25em;
+}
+
+article {
+	background-color: #0000ff;
+	padding-top: 2em; 
+	padding-bottom: 2em;
+	padding-left: 2em;
+	margin: 0.5em;
+}
+
+footer {
+	background-color: #8a2be2;
+	text-align: center;
+	font-size: 2em;
+}
+

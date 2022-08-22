@@ -1,0 +1,63 @@
+@import '../fonts/fonts.css';
+
+:root {
+    --white: #ffffff;
+    --black: #212429;
+    --pink: #F784AD;
+    --purple: #7048E8;
+    --purple-1: #5028C6;
+    --blue: #374FC7;
+    --blue-1: #4263EB;
+    --blue-2: #2342C0;
+    --red: #F03D3E;
+    --grey-1: #F8F9FA;
+    --grey-2: #DDE2E5;
+    --grey-3: #ACB5BD;
+    --grey-4: #495057;
+    --grey-bg: #334D6E;
+    --grey-8: #334D6E;
+    --grey-9: #90A0B7;
+    --grey-5: #E2E6E8;
+    --grey-6: #F3F5F5;
+    --grey-7: #E3E7EA;
+    --hover-1: #D84910;
+    --error: var(--red);
+    --success: var(--blue);
+    --primary: var(--blue);
+    --secondary: var(--purple);
+    --primary-lighten: #A0B1F5;
+    --preview-bg: #F9FAFC;
+    --svg-figures: #212429;
+    --hover-tabs: #212429;
+    --button-txt: #ffffff;
+    --alternate-bg: #ffffff;
+    --alternate-text: #495057;
+    --alternate-hover: #212429;
+    --accordeon-text: #495057;
+}
+
+html[data-theme-dark] {
+    --white: #212429;
+    --black: #ACB5BD;
+    --preview-bg: #495057;
+    --svg-figures: #ffffff;
+    --hover-tabs: #ffffff;
+    --alternate-bg: #495057;
+    --alternate-text: #ACB5BD;
+    --alternate-hover: #212429;
+    --accordeon-text: #DDE2E5;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+html, body {
+    height: 100%;
+}

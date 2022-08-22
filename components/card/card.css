@@ -1,0 +1,122 @@
+.card {
+    width: 350px;
+    height: 367px;
+    background: var(--white);
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+}
+
+.card__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.card__footer {
+    text-align: center;
+    margin-top: 67px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: var(--black);
+}
+
+.card__link {
+    text-decoration: none;
+}
+
+.card__grid-input {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+    margin-top: 55px;
+}
+
+.card__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+    color: var(--grey-3);
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.card__buttons {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+}
+
+.card__buttons-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+}
+
+.card__castom-form-element {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+    margin-bottom: 60px;
+}
+
+.card__form-group {
+    display: grid;
+    grid-template-columns: repeat(3, calc(33.3333% - 15px));
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin: 3rem 0;
+}
+
+@media all and (max-width: 767px) {
+    .card__buttons {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(8, auto);
+        grid-auto-flow: column;
+        grid-gap: 1rem;
+        justify-content: center;
+    }
+    .card__castom-form-element {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(9, auto);
+        grid-auto-flow: column;
+        grid-gap: 1rem;
+        margin-bottom: 60px;
+        justify-content: center;
+    }
+    .card__form-group {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 30px;
+        margin: 3rem 0;
+        width: 90%;
+        margin: 20px auto;
+    }
+    .card_mobile {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .card__buttons-name {
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="../components/header/header.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../components/card/card.css">
+    <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css">
+    <link rel="stylesheet" href="../07-lection5/01-checkbox/checkbox.css">
+    <link rel="stylesheet" href="../07-lection5/02-radio/radio.css">
+    <link rel="stylesheet" href="../07-lection5/04-input/input.css">
+    <link rel="stylesheet" href="../09-lection7/01-burger-menu/burger-menu.css">
+    <link rel="stylesheet" href="../10-lection8/theme-changer.css">
+    <script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
+    <title></title>
+</head>
+<body>
+    <div class="template">
+        <header class="header">
+            <div class="container">
+                <div class="header__mobile-menu">
+                    <div class="burger">
+                        <input id="toggle" class="burger__toggle" type="checkbox"/>
+                        <label class="burger__button" for="toggle">
+                            <span class="burger__open"></span>
+                        </label>
+                        <div class="burger__menu">
+                            <p class="burger__menu-title">Components</p>
+                            <ul class="burger__menu-item">
+                                <li><a class="burger__menu-items" href="modal.html">Modal</a></li>
+                                <li><a class="burger__menu-items" href="tooltip.html">Tooltip</a></li>
+                                <li><a class="burger__menu-items" href="avatar.html">Avatar</a></li>
+                                <li><a class="burger__menu-items" href="calendar.html">Calendar</a></li>
+                                <li><a class="burger__menu-items" href="histogram.html">Histogram</a></li>
+                                <li><a class="burger__menu-items" href="castom-form-element.html">Custom form elements</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bar">
+                    <a href="../index.html"><div class="header__figures">
+                        <div class="header__square">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect class="header__svg" width="30" height="30" fill="var(--svg-figures)"/>
+                            </svg>
+                        </div>
+                        <div class="header__round">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect class="header__svg" width="32" height="32" rx="16" fill="var(--svg-figures)"/>
+                            </svg>
+                        </div>
+                        <div class="header__triangle">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="header__svg" d="M0 0L32 32H0V0Z" fill="var(--svg-figures)"/>
+                            </svg>
+                        </div>
+                    </div></a>
+                    <div class="header__theme-changer">
+                        <div class="header__sun">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 1V3" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 21V23" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.22021 4.21997L5.64021 5.63997" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18.3599 18.36L19.7799 19.78" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1 12H3" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12H23" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.22021 19.78L5.64021 18.36" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18.3599 5.63997L19.7799 4.21997" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </div>
+                        <div class="header__toggle">
+                            <div class="toggle">
+                                <input class="toggle__input" id="theme-changer" type="checkbox">
+                                <label class="toggle__state" for="theme-changer"></label>
+                            </div>
+                        </div>
+                        <div class="header__moon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.9999 12.79C20.8426 14.4922 20.2038 16.1144 19.1581 17.4668C18.1125 18.8192 16.7034 19.8458 15.0956 20.4265C13.4878 21.0073 11.7479 21.1181 10.0794 20.7461C8.41092 20.3741 6.8829 19.5345 5.67413 18.3258C4.46536 17.117 3.62584 15.589 3.25381 13.9205C2.88178 12.252 2.99262 10.5121 3.57336 8.9043C4.15411 7.29651 5.18073 5.88737 6.53311 4.84175C7.8855 3.79614 9.5077 3.15731 11.2099 3C10.2133 4.34827 9.73375 6.00945 9.85843 7.68141C9.98312 9.35338 10.7038 10.9251 11.8893 12.1106C13.0748 13.2961 14.6465 14.0168 16.3185 14.1415C17.9905 14.2662 19.6516 13.7866 20.9999 12.79V12.79Z" stroke="#ACB5BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="template__main">
+            <div class="container">
+                <div class="template__main-grid">
+                    <div class="template__menu">
+                        <aside>
+                            <p class="template__menu-title">Components</p>
+                            <ul class="template__menu-items">
+                                <li class="template__menu-item"><a class="template__menu-link" href="./modal.html">Modal</a></li>
+                                <li class="template__menu-item"><a class="template__menu-link" href="./tooltip.html">Tooltip</a></li>
+                                <li class="template__menu-item"><a class="template__menu-link" href="./avatar.html">Avatar</a></li>
+                                <li class="template__menu-item"><a class="template__menu-link" href="./calendar.html">Calendar</a></li>
+                                <li class="template__menu-item"><a class="template__menu-link" href="./histogram.html">Histogram</a></li>
+                                <li class="template__menu-item"><a class="template__menu-link" href="./castom-form-element.html">Custom form elements</a></li>
+                            </ul>
+                            <a class="template__menu-link" href="../index.html">Main page</a>
+                        </aside>
+                    </div>
+                    <div class="template__component">
+                        <div class="template__container">
+                            <h3 class="template__component-title">Custom form element</h3>
+                            <div class="template__content-inner">
+                                <div class="castom-form-element">
+                                    <div class="card__castom-form-element">
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__state">
+                                                <span class="checkbox__control checkbox__control_bg-black">
+                                                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="checkbox__svg" d="M1.5 7.5L5 11L13 2" stroke="var(--white)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>                        
+                                                </span>
+                                                <span class="checkbox__label">Default</span>
+                                            </span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input" checked>
+                                            <span class="checkbox__state">
+                                                <span class="checkbox__control checkbox__control_bg-black">
+                                                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="checkbox__svg" d="M1.5 7.5L5 11L13 2" stroke="var(--white)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>                        
+                                                </span>
+                                                <span class="checkbox__label">Checked</span>
+                                            </span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input" disabled>
+                                            <span class="checkbox__state">
+                                                <span class="checkbox__control">
+                                                </span>
+                                                <span class="checkbox__label">Disabled</span>
+                                            </span>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="name1" class="radio__input">
+                                            <span class="radio__state">
+                                                <span class="radio__control radio__control_bg-black">
+                                                    <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="18" height="18" rx="9" fill="#4263EB"/>
+                                                    </svg>   
+                                                                                
+                                                </span>
+                                                <span class="radio__label">Male</span>
+                                            </span>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="name1" class="radio__input" checked>
+                                            <span class="radio__state">
+                                                <span class="radio__control radio__control_bg-black">
+                                                    <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="18" height="18" rx="9" fill="#4263EB"/>
+                                                    </svg>    
+                                                                                
+                                                </span>
+                                                <span class="radio__label">Female</span>
+                                            </span>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" class="radio__input" disabled>
+                                            <span class="radio__state">
+                                                <span class="radio__control">                      
+                                                </span>
+                                                <span class="radio__label">Special</span>
+                                            </span>
+                                        </label>
+                                        <div class="toggle">
+                                            <input class="toggle__input" id="switch1" type="checkbox">
+                                            <label class="toggle__state" for="switch1"></label>
+                                            <span class="toggle__label" style="transform: translate(65px, -25px);">Off</span>
+                                        </div>
+                                        <div class="toggle">
+                                            <input class="toggle__input" id="switch2" type="checkbox" checked>
+                                            <label class="toggle__state" for="switch2"></label>
+                                            <span class="toggle__label" style="transform: translate(65px, -25px);">On</span>
+                                        </div>
+                                        <div class="toggle">
+                                            <input class="toggle__input" id="switch3" type="checkbox" disabled>
+                                            <label class="toggle__state" for="switch3"></label>
+                                            <span class="toggle__label" style="transform: translate(65px, -25px);">Disabled</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__form-group">
+                                    <div class="form-group">
+                                        <label class="form-group__label" for="input1">Label</label>
+                                        <div class="form-group__input-wrapper">
+                                            <input class="form-group__input" type="text" id="input1" placeholder="Placeholder">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-group__label" for="input2">Focus</label>
+                                        <div class="form-group__input-wrapper">
+                                            <input class="form-group__input" type="text" id="input2" value="Filled input" autofocus>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-group__label" for="input3">Success</label>
+                                        <div class="form-group__input-wrapper form-group_success">
+                                            <input class="form-group__input" type="text" id="input3" value="Success">
+                                            <svg class="form-group__icon form-group__icon_success" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999" stroke="#374FC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M22 4L12 14.01L9 11.01" stroke="#374FC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-group__label" for="input4">Error</label>
+                                        <div class="form-group__input-wrapper form-group_invalid">
+                                            <input class="form-group__input" type="text" id="input4" value="Error">
+                                            <svg class="form-group__icon form-group__icon_invalid" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.29 3.86002L1.82002 18C1.64539 18.3024 1.55299 18.6453 1.55201 18.9945C1.55103 19.3438 1.64151 19.6872 1.81445 19.9905C1.98738 20.2939 2.23675 20.5468 2.53773 20.7239C2.83871 20.901 3.18082 20.9962 3.53002 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5468 22.0127 20.2939 22.1856 19.9905C22.3585 19.6872 22.449 19.3438 22.448 18.9945C22.4471 18.6453 22.3547 18.3024 22.18 18L13.71 3.86002C13.5318 3.56613 13.2807 3.32314 12.9812 3.15451C12.6817 2.98587 12.3438 2.89728 12 2.89728C11.6563 2.89728 11.3184 2.98587 11.0188 3.15451C10.7193 3.32314 10.4683 3.56613 10.29 3.86002V3.86002Z" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 9V13" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 16V16.5" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-group__label" for="input5">Disabled</label>
+                                        <div class="form-group__input-wrapper">
+                                            <input class="form-group__input" type="text" id="input5" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="template__footer">
+            <div class="container">Reusable component library</div>
+        </footer>
+    </div>
+</body>
+</html>

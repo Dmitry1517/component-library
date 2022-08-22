@@ -1,0 +1,63 @@
+.toggle {
+    max-width: 3.25rem;
+}
+
+.toggle__input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    opacity: 0;
+}
+
+.toggle__state {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 28px;
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: 16px;
+    cursor: pointer;
+    appearance: none;
+    margin-right: 12px;
+}
+
+.toggle__state::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    left: 1px;
+    top: 1px;
+    width: 24px;
+    height: 24px;
+    background-color: var(--grey-2);
+    border-radius: 50%;
+    transition-duration: 400ms;
+}
+
+.toggle__label {
+    position: absolute;
+}
+
+.toggle__input:checked + .toggle__state::after {
+    background-color: var(--white);
+    transform: translateX(100%);
+}
+
+.toggle__input:checked + .toggle__state {
+    background-color: var(--blue-1);
+    border: 1px solid var(--blue-1);
+}
+
+.toggle__input[disabled] ~ .toggle__state {
+    background: var(--grey-2);
+    opacity: 0.5;
+}
+
+.toggle__input[disabled] ~ .toggle__state::after {
+    background: var(--grey-3);
+}
+
+.toggle__input[disabled] + .toggle__state {
+    cursor: default;
+    pointer-events: none;
+}

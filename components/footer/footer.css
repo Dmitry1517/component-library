@@ -1,0 +1,30 @@
+.footer {
+    background: var(--white);
+    padding: 71px 0 136px;
+}
+
+.footer__title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 48px;
+    color: var(--black);
+    margin-top: 0;
+}
+
+.footer__info {
+    text-align: center;
+    margin: 0px 223px 0px 257px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+}
+
+@media all and (max-width: 767px) {
+    .footer__info {
+        margin: 0px 30px;
+    }
+}

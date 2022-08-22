@@ -1,0 +1,65 @@
+.calendar {
+    width: 100%;
+    max-width: 304px;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    padding: 28px 34px 40px 36px;
+}
+
+.calendar__wrapper {
+    position: relative;
+    padding-bottom: 100%;
+}
+
+.calendar__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.calendar__title {
+    text-align: center;
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 24px;
+    color: var(--grey-8);
+}
+
+.calendar__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 20px;
+    color: var(--grey-8);
+}
+
+.calendar__item_day {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 20px;
+    color: var(--grey-9);
+}
+
+.calendar__item_active {
+    background: var(--blue-1);
+    color: var(--white);
+}
+
+.calendar__item_beetwen-active {
+    background: var(--primary-lighten);
+}
+
+.calendar_mini {
+    zoom: 0.6;
+}
